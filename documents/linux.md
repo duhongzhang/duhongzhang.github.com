@@ -2,8 +2,14 @@
 
 ### 0. 命令
 
+#### 0.1. ps
+
 - ps - report a snapshot of the current processes
-  - 
+
+#### 0.2. du
+
+- du - estimate file space usage
+  - du -sh 文件夹，显示文件件占用空间大小
 
 ## 1. 进程
 
