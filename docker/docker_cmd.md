@@ -13,24 +13,49 @@
 ##### 1.1.1. **option**
 
 - [ ] **-a stdin:** 指定标准输入输出内容类型，可选 STDIN/STDOUT/STDERR 三项；
+
 - [x] **-d:** 后台运行容器，并返回容器ID；
+
 - [x] **-i:** 以交互模式运行容器，通常与 -t 同时使用；
+
   - 阻塞交互式，exit或ctrl+d退出
+
 - [ ] **-P:** 随机端口映射，容器内部端口**随机**映射到主机的端口
+
 - [x] **-p:** 指定端口映射，格式为：主机(宿主)端口:容器端口 
+
+  - [ ] 实例，访问nginx：docker run --name nginx-test -p 8888:80  -p 9999:80 -d nginx
+
 - [x] **-t:** 为容器重新分配一个伪输入终端，通常与 -i 同时使用；
+
   - 类似ssh，切换到容器运行环境
+
 - [x] **--name="nginx-lb":** 为容器指定一个名称；
+
 - [ ] **--dns 8.8.8.8:** 指定容器使用的DNS服务器，默认和宿主一致；
+
 - [ ] **--dns-search example.com:** 指定容器DNS搜索域名，默认和宿主一致；
+
 - [ ] **-h "mars":** 指定容器的hostname；
+
 - [ ] **-e username="ritchie":** 设置环境变量；
+
+  - [ ] ```
+    $ docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+    ```
+
 - [ ] **--env-file=[]:** 从指定文件读入环境变量；
+
 - [ ] **--cpuset="0-2" or --cpuset="0,1,2":** 绑定容器到指定CPU运行；
+
 - [ ] **-m :**设置容器使用内存最大值；
+
 - [ ] **--net="bridge":** 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型；
+
 - [ ] **--link=[]:** 添加链接到另一个容器；
+
 - [ ] **--expose=[]:** 开放一个端口或一组端口；
+
 - [x] **--volume , -v:** 绑定一个卷，映射文件夹，主机(宿主)文件夹:容器文件夹 
 
 ### 2. 查看
@@ -100,6 +125,22 @@ $docker attach [OPTIONS] CONTAINER
 ```
 
 - --sig-proxy=false来确保CTRL-D或CTRL-C不会关闭容器
+
+**docker exec ：**在运行的容器中执行命令
+
+```
+$docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+```
+
+- [ ] **-d :**分离模式: 在后台运行
+
+- [x] **-i :**即使没有附加也保持STDIN 打开
+
+- [x] **-t :**分配一个伪终端
+
+```
+docker exec -it mynginx /bin/sh
+```
 
 ### 5. 拷贝数据
 
@@ -175,3 +216,17 @@ $docker search [OPTIONS] TERM
 - **--automated :**只列出 automated build类型的镜像；
 - **--no-trunc :**显示完整的镜像描述；
 - **-f <过滤条件>:**列出收藏数不小于指定值的镜像。
+
+### 8. inspect
+
+- **docker inspect :** 获取容器/镜像的元数据。inspect(检查，查看，观察)
+
+```
+docker inspect [OPTIONS] NAME|ID [NAME|ID...]
+```
+
+- [ ] **-f :**指定返回值的模板文件
+
+- [ ] **-s :**显示总的文件大小
+
+- [ ] **--type :**为指定类型返回JSON
