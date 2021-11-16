@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'gcc' } }
+    agent { docker { image 'hello-world' } }
     stages {
         stage('build') {
             steps {
-                sh 'gcc --version'
+                echo 'hello-world --version'
             }
         }
     }
