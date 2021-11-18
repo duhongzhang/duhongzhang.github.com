@@ -11,6 +11,13 @@
 - du - estimate file space usage
   - du -sh 文件夹，显示文件件占用空间大小
 
+### 0.3. ll
+
+- 添加别名
+  - vim ~/.bashrc
+  - aslias ll='ls -l'
+  - source ~/.bashrc
+
 ## 1. 进程
 
 - 僵尸，孤儿进程都涉及到父子关系：linux的子进程是由父进程来创建和管理的，所以涉及到:

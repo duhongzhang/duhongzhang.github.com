@@ -1,8 +1,37 @@
 ## docker command
 
+## 0. 实践
+
+- 后台运行容器
+  - docker run -tid xxx ：
+    - centos跑完没退出，hello-world跑完退出了
+  - docker start xxx :
+    -  centos跑起来了
+- docker exec -ti xxx[不能是image名]  /bin/bash
+  - 连接启动中的容器
+- 使用`docker push`镜像时，出现`denied: requested access to the resource is denied`
+  - docker login
+  - image要以username开始：username/image:version
+- 上传完整image
+  - 先commit，再push。
+- 构建boost环境
+  - yum install -y vim iptables
+  - yum install -y automake autoconf libtool git
+  - yum install -y epel-release rpm-build cmake3
+  - yum install -y gcc gcc-c++ gdb
+  - yum install -y boost-devel
+- 添加ll命令
+  - vim ~/.bashrc
+    - aslias ll='ls -l'
+  - source ~/.bashrc
+
 ### 1. 启动
 
 #### 1.1. run
+
+- 重点，使用run image会返回，容器的id。
+  - run的是类image，生成的是实例id。
+  - start的是实例id。
 
 **docker run ：**创建一个新的容器并运行一个命令
 
@@ -217,7 +246,18 @@ $docker search [OPTIONS] TERM
 - **--no-trunc :**显示完整的镜像描述；
 - **-f <过滤条件>:**列出收藏数不小于指定值的镜像。
 
-### 8. inspect
+#### 7.5. commit
+
+- **docker commit**：保存本地镜像变化
+
+  ```
+  $docker commit [option] id new-image-name[:tag]
+  ```
+
+- -m : 添加说明信息
+- -a : 添加作者信息
+
+### 8. 查看容器元数据
 
 - **docker inspect :** 获取容器/镜像的元数据。inspect(检查，查看，观察)
 
@@ -230,3 +270,19 @@ docker inspect [OPTIONS] NAME|ID [NAME|ID...]
 - [ ] **-s :**显示总的文件大小
 
 - [ ] **--type :**为指定类型返回JSON
+
+### 9. 修改容器别名
+
+```php
+docker rename 镜像ID <new_container>       //修改容器别名
+```
+
+- 同run时，--name，可以替代container-id使用。
+
+### 10. 修改镜像名
+
+```shell
+$docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+```
+
+- 给image起别名
