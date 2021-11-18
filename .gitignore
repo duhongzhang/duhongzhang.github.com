@@ -1,0 +1,15 @@
+*.suo
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+*.ipch
+*.log
+*.recipe
+*.txt
+*.iobj
+*.ipdb
+*.obj
+*.tlog
+*.lastbuildstate
+*.pdb
