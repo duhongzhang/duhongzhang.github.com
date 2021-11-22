@@ -5,21 +5,32 @@
 - 后台运行容器
   - docker run -tid xxx ：
     - centos跑完没退出，hello-world跑完退出了
+    - 如果TAG=latest可以省略，其他不可以[:TAG]
   - docker start xxx :
     -  centos跑起来了
 - docker exec -ti xxx[不能是image名]  /bin/bash
+  
   - 连接启动中的容器
 - 使用`docker push`镜像时，出现`denied: requested access to the resource is denied`
   - docker login
   - image要以username开始：username/image:version
 - 上传完整image
+  
   - 先commit，再push。
 - 构建boost环境
   - yum install -y vim iptables
+  
   - yum install -y automake autoconf libtool git
+  
   - yum install -y epel-release rpm-build cmake3
+  
   - yum install -y gcc gcc-c++ gdb
+  
   - yum install -y boost-devel
+  
+    - > automake autoconf生成config的工具，以便以make install方式安装软件
+  
+    - > libtool将lib依赖关系写入lib.la，不必更改LD_LIBARY_PATH
 - 添加ll命令
   - vim ~/.bashrc
     - aslias ll='ls -l'

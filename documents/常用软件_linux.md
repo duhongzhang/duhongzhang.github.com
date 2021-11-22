@@ -112,10 +112,15 @@
 
 ### 3.3. 命令
 
+- 安装
+  -  install
+
 - 卸载
   - remove/erase
-- 列举版本
+- 列出版本
   - list xx --showduplicates(可以tab联想输入)
+- 列出依赖
+  - deplist xx
 
 ## 4. firewalld
 
@@ -159,6 +164,9 @@
 
 ### 5.2. 本地设置
 
+- 在**配置文件**中添加：
+  - /etc/vimrc 或 /etc/vim/vimrc
+
 ```shell
 "self defined settings
 "1. set linenumber
@@ -201,5 +209,25 @@ set hlsearch
 set incsearch
 "20. save undo opration in files
 set undofile
+```
+
+## 6. cmake
+
+### 6.1. CMakeLists.txt（大小写如此）
+
+```cmake
+## 1. 三要素
+ #VERSION大写
+ #3.x x必须
+cmake_minimum_required(VERSION 3.0)
+project(projectName)
+add_executable(exeName xx.cpp)
+
+## 2. 指定编译器
+set(CMAKE_CXX_STANDARD 11)
+
+## 3. 指定CPack(大小写如此)
+set(CPACK_GENERATOR "RPM")
+include(CPack)
 ```
 

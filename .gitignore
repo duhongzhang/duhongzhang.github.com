@@ -13,3 +13,7 @@
 *.tlog
 *.lastbuildstate
 *.pdb
+/eight_legged_essays/constructor/constructor/Debug/*.ilk
+*.ilk
+*.exe
+*.idb

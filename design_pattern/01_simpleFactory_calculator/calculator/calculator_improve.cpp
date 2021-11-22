@@ -142,7 +142,7 @@ public:
 	}
 };
 
-int main()
+int main_improve()
 {
 	using namespace std;
 	double left, right;

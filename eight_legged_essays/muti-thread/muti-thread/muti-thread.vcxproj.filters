@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="calculator.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="calculator_improve.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="digitals.cpp">
+    <ClCompile Include="muti-thread.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
