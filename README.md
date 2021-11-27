@@ -8,24 +8,30 @@
 
 ### 主要涉及面：
 
-1. [C++语法](documents/C++语法.md)  `20211122`
-2. [力扣算法](documents/力扣算法.md)
-3. [设计模式](documents/设计模式.md) `20211118`
-4. [linux](documents/linux.md) `20211115`
-5. [rtos](documents/rtos.md) `20211116`
-6. [技巧未知](documents/技巧.md) `20211115`
-7. [开源项目](documents/开源项目.md)
-8. [windows](documents/windows.md) `20211115`
-9. [linux常用软件](documents/常用软件_linux.md) `20211118`
-10. [windows常用软件](documents/常用软件_windows.md) `20211119`
-11. [markdown](documents/markdown.md) `20211115`
+1. [C++语法](documents/C++语法.md)  `20211127`
+2. [常用接口](documents/常用接口.md)
+3. [嵌入式](documents/嵌入式.md)
+4. [力扣算法](documents/力扣算法.md)
+5. [设计模式](documents/设计模式.md) `20211118`
+6. [linux](documents/linux.md) `20211127`
+7. [rtos](documents/rtos.md) `20211116`
+8. [技巧未知](documents/技巧.md) `20211115`
+9. [开源项目](documents/开源项目.md)
+10. [windows](documents/windows.md) `20211115`
+11. [linux常用软件](documents/常用软件_linux.md) `20211118`
+12. [windows常用软件](documents/常用软件_windows.md) `20211119`
+13. [markdown](documents/markdown.md) `20211115`
+14. [业务研究](documents/业务研究.md) `20211126`
 
 ### 签到栏：
 
 > 2021.11.15
+>
+> TODO：形式改为和遗忘曲线相关的。
 
-| Mon     | Tue     | Wed     | Thu     | Fri     | Sat  | Sun  |
-| ------- | ------- | ------- | ------- | ------- | ---- | ---- |
-| 15:yum: | 16:yum: | 17:yum: | 18:yum: | 19:yum: | 20   | 21   |
-| 22:yum: | 23      | 24      | 25      | 26      | 27   | 28   |
-| 29      | 30      |         |         |         |      |      |
+| Mon     | Tue     | Wed     | Thu     | Fri     | Sat     | Sun  |
+| ------- | ------- | ------- | ------- | ------- | ------- | ---- |
+| 15:yum: | 16:yum: | 17:yum: | 18:yum: | 19:yum: | 20      | 21   |
+| 22:yum: | 23:yum: | 24      | 25      | 26:yum: | 27:yum: | 28   |
+| 29      | 30      |         |         |         |         |      |
+

@@ -17,3 +17,9 @@
 *.ilk
 *.exe
 *.idb
+*.json
+*.gif
+*.out
+*.png
+*.css
+*.html
