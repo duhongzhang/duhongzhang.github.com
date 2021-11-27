@@ -26,8 +26,15 @@
 
 #### 0.5. lsof
 
-- lsof 文件，查看使用文件的程序
-- lsof -p 进程号，查看进程使用的文件，包括so文件，和fd。
+- lsof - list open files
+  - lsof 文件，查看使用文件的程序
+  - lsof -p 进程号，查看进程使用的文件，包括so文件，和fd
+
+#### 0.6. strace
+
+- strace - trace system calls and signals
+  - strace 要启动的程序
+  - strace -p pid
 
 ## 1. 进程
 
