@@ -13,7 +13,12 @@ https://git-scm.com/book/zh/v2/
 $git mv sources destnations
 ```
 
-### 2. 查看某文件日志
+### 2. log/show：查看文件日志/差分
+
+```shell
+$git log [fileName]
+$git show [commitId] [fileName]
+```
 
 ### 3. commit：上传并添加注释
 
