@@ -35,7 +35,7 @@
 - 默认安装文件及镜像下载位置（卸载后删除）
   - /var/lib/docker
 
-### 1.3. [使用](../docker/docker_cmd.md)
+### 1.3. [使用](../03_tools/02_docker/docker_cmd.md)
 
 ## 2. Jenkins
 
@@ -64,7 +64,7 @@
 
 #### 2.3.1. pipeline
 
-- [pipeline](../jenkins/pipeline/pipeline.md)（流水线）：集成CI和发布CD的插件套装，通过生成Jenkinsfile实现。
+- [pipeline](../03_tools/03_jenkins/pipeline/pipeline.md)（流水线）：集成CI和发布CD的插件套装，通过生成Jenkinsfile实现。
 
 - 报错：Invalid agent type "docker" specified. Must be one of [any, label, none]
 

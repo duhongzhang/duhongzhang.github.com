@@ -23,3 +23,5 @@
 *.png
 *.css
 *.html
+*.filters
+*.user

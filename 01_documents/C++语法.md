@@ -4,7 +4,7 @@
 
 #### 1.1. 类间关系
 
-[图像](../astah/class_uml.asta)
+[图像](../03_tools/01_astah/class_uml.asta)
 
 - **泛化(generalization)**：
 
