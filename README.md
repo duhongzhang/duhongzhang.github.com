@@ -8,22 +8,33 @@
 
 ### 主要涉及面：
 
-1. [C++语法](01_documents/C++语法.md)  `20211127`
-2. [常用接口](01_documents/常用接口.md)
-3. [嵌入式](01_documents/嵌入式.md)
-4. [力扣算法](01_documents/力扣算法.md)
-5. [设计模式](01_documents/设计模式.md) `20211118`
-6. [linux](01_documents/linux.md) `20211127`
-7. [rtos](01_documents/rtos.md) `20211116`
-8. [技巧未知](01_documents/技巧.md) `20211115`
-9. [开源项目](01_documents/开源项目.md)
-10. [windows](01_documents/windows.md) `20211115`
-11. [linux常用软件](01_documents/常用软件_linux.md) `20211118`
-12. [windows常用软件](01_documents/常用软件_windows.md) `20211119`
-13. [markdown](01_documents/markdown.md) `20211115`
-14. [业务研究](01_documents/业务.md) `20211126`
+1. [C++](01_documents/01_cplusplus/cplusplus.md)  `20220120`
+2. [android](01_documents/02_android/android.md)  `20220120`
+3. [常用接口](01_documents/常用接口.md)
+4. [嵌入式](01_documents/嵌入式.md)
+5. [力扣算法](01_documents/力扣算法.md)
+6. [设计模式](01_documents/设计模式.md) `20211118`
+7. [linux](01_documents/linux.md) `20211127`
+8. [rtos](01_documents/rtos.md) `20211116`
+9. [技巧未知](01_documents/技巧.md) `20211115`
+10. [开源项目](01_documents/开源项目.md)
+11. [windows](01_documents/windows.md) `20211115`
+12. [linux常用软件](01_documents/常用软件_linux.md) `20211118`
+13. [windows常用软件](01_documents/常用软件_windows.md) `20211119`
+14. [markdown](01_documents/markdown.md) `20211115`
+15. [业务研究](01_documents/业务.md) `20211126`
 
 ### 签到栏：
+
+> 2022.1.20
+>
+> 断点续传
+
+| Mon  | Tue  | Wed  | Thu     | Fri  | Sat  | Sun  |
+| :--: | ---- | ---- | ------- | ---- | ---- | ---- |
+|      |      |      | 20:yum: |      |      |      |
+|      |      |      |         |      |      |      |
+|      |      |      |         |      |      |      |
 
 > 2021.11.15
 >
