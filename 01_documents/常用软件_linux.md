@@ -26,7 +26,7 @@
 - 安装：
   - yum install -y yum-utils device-mapper-persistent-data lvm2
   - sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-  - yum install docker-ce（社区版）
+  - yum install -y docker-ce（社区版）
 - 配置：
   - 启动 systemctl start docker
   - 开机启动 systemctl enable docker
